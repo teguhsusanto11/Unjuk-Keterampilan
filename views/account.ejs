@@ -1,0 +1,16 @@
+<!-- views/account.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account</title>
+</head>
+<body>
+    <h1>Account Settings</h1>
+    <p>Welcome, <%= user.username %>!</p>
+    <form action="/account" method="post">
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+        <button type="submit">Change Password</button>
+    </form>
+</body>
+</html>
